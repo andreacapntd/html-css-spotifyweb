@@ -1,1 +1,37 @@
+/* general rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main {
+  width: 100vw;
+}
+
+nav {
+  float: left;
+  width: 230px;
+  height: calc(100vh - 90px);
+  background-color: black;
+}
+
+.main-body {
+  float: left;
+  width: calc(100vw - 230px);
+  height: calc(100vh - 90px);
+  /* debug */
+  background-color: red;
+}
+
+
+footer {
+  height: 90px;
+  background-color: #292828;
+}
