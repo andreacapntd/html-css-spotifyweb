@@ -29,9 +29,7 @@ nav {
   float: left;
   height: 100%;
   width: calc(100% - 230px);
-
-  /* debug */
-  background-color: red;
+  background-color: #393a3b;
 }
 /* <!-- nav top upgrade --> */
 #upgrade {
@@ -62,6 +60,98 @@ nav {
 #upgrade .button:hover {
   transform: scale(1.1);
 }
+
+/* navigation list */
+.navigation {
+  margin-top: 10px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.navigation ul li {
+  margin-right: 15px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #b3b3b3;
+  text-transform: uppercase;
+}
+
+.navigation ul li a:hover {
+  color: #fff;
+}
+
+/*Recently played  */
+#recently {
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+#recently h2 {
+  font-size: 30px;
+  color: #fff;
+}
+
+#recently .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#recently .cover .play {
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 180px;
+	position: absolute;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	visibility: hidden;
+}
+
+#recently .cover:hover .play {
+	visibility: visible;
+  cursor: pointer;
+}
+
+.play .fa-play-circle {
+	color: #fff;
+	font-size: 73px;
+	margin-top: 53px;
+}
+
+.cover {
+  height: 5vh;
+  width: 14%;
+  position: relative;
+}
+.cover img {
+  height: 180px;
+  width: 100%;
+}
+
+.cover h5, .cover h6 {
+  text-align: center;
+}
+
+.cover h5 {
+  font-size: 17px;
+  color: #fff;
+  margin: 7px 0;
+}
+
+.cover h6 {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
 /* footer */
 footer {
   height: 90px;
