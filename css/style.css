@@ -30,6 +30,7 @@ nav {
   height: 100%;
   width: calc(100% - 230px);
   background-color: #393a3b;
+  overflow: auto;
 }
 /* <!-- nav top upgrade --> */
 #upgrade {
@@ -70,6 +71,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 .navigation ul li {
@@ -89,23 +91,29 @@ nav {
 
 /*Recently played  */
 #recently {
-  padding: 0 10px;
-  margin-top: 30px;
+  padding: 0 15px;
+  margin-top: 20px;
 }
 
-#recently h2 {
-  font-size: 30px;
+#recently h3 {
+  font-size: 28px;
   color: #fff;
 }
 
-#recently .card {
+.cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
   margin-top: 15px;
 }
 
-#recently .cover .play {
+.cover {
+  width: 15%;
+  margin-right: 15px;
+  position: relative;
+}
+
+.cover .overlayer {
 	top: 0;
 	right: 0;
 	width: 100%;
@@ -113,45 +121,41 @@ nav {
 	position: absolute;
 	background: rgba(0,0,0,0.6);
 	text-align: center;
+  cursor: pointer;
 	visibility: hidden;
 }
 
-#recently .cover:hover .play {
-	visibility: visible;
-  cursor: pointer;
-}
-
-.play .fa-play-circle {
+.overlayer .fa-play-circle {
 	color: #fff;
-	font-size: 73px;
-	margin-top: 53px;
+	font-size: 70px;
+	margin-top: 55px;
+	transition: 100ms ease-in-out;
 }
 
-.cover {
-  height: 5vh;
-  width: 14%;
-  position: relative;
+.fa-play-circle:hover {
+	transform: scale(1.1);
 }
+
+.cover:hover .overlayer {
+	visibility: visible;
+}
+
 .cover img {
   height: 180px;
-  width: 100%;
+  width: 100%
+}
+.cover h5 {
+  font-size: 15px;
+  color: #fff;
+}
+.cover h6 {
+  color: #b3b3b3;
 }
 
 .cover h5, .cover h6 {
   text-align: center;
+  margin-top: 5px;
 }
-
-.cover h5 {
-  font-size: 17px;
-  color: #fff;
-  margin: 7px 0;
-}
-
-.cover h6 {
-  font-size: 14px;
-  color: #b3b3b3;
-}
-
 /* footer */
 footer {
   height: 90px;
