@@ -292,3 +292,52 @@ footer {
   height: 90px;
   background-color: #292828;
 }
+
+/* smartphone version */
+@media all and (max-width: 768px) {
+
+  /* navigation list */
+  .navigation ul li {
+    margin-right: 47px;
+    margin-top: 25px;
+  }
+
+  /* Recently played */
+  .cover {
+    width: 47%;
+  }
+
+  .cover img {
+    margin-top: 20px;
+  }
+
+  .cover:hover .overlayer {
+  	visibility: hidden;
+  }
+}
+
+/* tablet version */
+@media all and (min-width:769px) and (max-width:992px) {
+
+  /* navigation list */
+  .navigation ul li {
+    margin-right: 45px;
+    margin-top: 25px;
+  }
+
+  .navigation ul li a {
+    font-size: 14px;
+  }
+
+  /* Recently played */
+  .cover {
+    width: 22%;
+  }
+
+  .cover img {
+    height: 140px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+}
