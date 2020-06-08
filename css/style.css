@@ -29,7 +29,7 @@ nav {
   float: left;
   height: 100%;
   width: calc(100% - 230px);
-  background-color: #393a3b;
+  background-color: rgb(24, 24, 24);
   overflow: auto;
 }
 /* <!-- nav top upgrade --> */
