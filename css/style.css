@@ -17,6 +17,7 @@ main {
  overflow: hidden;
 }
 
+/* navbar */
 nav {
   float: left;
   width: 230px;
@@ -24,6 +25,43 @@ nav {
   background-color: #000000;
 }
 
+/* Logo */
+#logo {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 10px;
+}
+
+#logo img {
+  height: 40px;
+}
+
+/* Main-Nav */
+#main-nav {
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+#main-nav ul li {
+  margin-bottom: 7px;
+}
+
+#main-nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+#main-nav ul li a:hover {
+  color: #fff;
+}
+
+#main-nav ul li a img {
+  height: 20px;
+  margin-right: 5px;
+}
 /* main body */
 .main-body {
   float: left;
