@@ -156,6 +156,48 @@ nav {
   text-align: center;
   margin-top: 5px;
 }
+
+/* Creato per John */
+#create {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+#create h3 {
+  font-size: 28px;
+  color: #fff;
+}
+
+#create h6 {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 15px;
+}
+
+/* Popular */
+#popular {
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+#popular h3 {
+  font-size: 28px;
+  color: #fff;
+}
+
+#popular h6 {
+  font-size: 13px;
+  color: #b3b3b3;
+  margin-top: 15px;
+}
+
+#popular img {
+  border-radius: 50%;
+}
+
+#popular .cover .overlayer {
+  border-radius: 50%;
+}
 /* footer */
 footer {
   height: 90px;
