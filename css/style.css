@@ -43,18 +43,18 @@ nav {
   margin-top: 20px;
 }
 
-#main-nav ul li {
+#main-nav .home  ul li {
   margin-bottom: 7px;
 }
 
-#main-nav ul li a {
+#main-nav  a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #b3b3b3;
 }
 
-#main-nav ul li a:hover {
+#main-nav  a:hover {
   color: #fff;
 }
 
@@ -62,6 +62,57 @@ nav {
   height: 20px;
   margin-right: 5px;
 }
+
+.playlist {
+  margin-top: 15px;
+}
+
+#main-nav .playlist h4 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.fas {
+  font-weight: 900;
+  font-size: 50px;
+  margin: 10px 10px 10px 0;
+}
+
+.playlist ul {
+  margin-top: 15px;
+}
+
+.playlist ul li{
+  margin-bottom: 20px;
+}
+
+.install {
+  margin-top: 30px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 15px;
+}
+
+.install a img {
+  height: 15px;
+  margin-right: 10px;
+}
+
+.profile {
+  margin-top: 15px;
+}
+
+.profile a {
+  font-size: 20px;
+}
+
+
+.profile a img {
+ height: 30px;
+ margin-right: 10px;
+ background-color: #b3b3b3;
+ border-radius: 50%;
+}
+
 /* main body */
 .main-body {
   float: left;
