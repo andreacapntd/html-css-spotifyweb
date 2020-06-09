@@ -304,6 +304,7 @@ nav {
 }
 /* footer */
 footer {
+  display: flex;
   height: 90px;
   padding: 0 10px;
   background-color: #292828;
@@ -353,12 +354,150 @@ footer {
 .heart a:hover {
   color: #fff;
 }
+
+/* cental block */
+.central-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+}
+
+.player ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.player ul li a {
+  color: #fff;
+}
+
+.player ul li {
+  margin-right: 20%;
+}
+
+.player ul li a .fas {
+  font-size: 20px;
+}
+
+.player ul li a .far {
+  font-size: 35px;
+}
+
+.progress-bar {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100% ;
+ padding-top: 15px;
+}
+
+.bar {
+  display: flex;
+  height: 10px;
+  width: 100%;
+  margin: 0 10px;
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+}
+
+.reproduction {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.bar:hover .reproduction {
+  background-color: #1ED760;
+  border: 1px solid #1ED760;
+  visibility: visible;
+}
+.circle {
+  display: flex;
+  align-items: center;
+}
+
+.circle .fas {
+  font-size: 18px;
+  margin: 0;
+  color: #fff;
+}
+
+.timing {
+  color: #fff;
+}
+
+/* block right */
+.block-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.player-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.player-right ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.player-right ul li {
+  margin-right: 10px;
+}
+.player-right .fas {
+  font-size: 25px;
+  margin: 0;
+  color: #fff;
+}
+
+.block-right .bar {
+  display: flex;
+  height: 5px;
+  width: 30%;
+  background-color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+  border-radius: 10px;
+}
+
+.player-right .circle .fas {
+  font-size: 12px;
+}
+
+
 /* smartphone version */
 @media all and (max-width: 579px) {
+
+  /* navigation list */
+  .navigation ul li {
+    margin-right: 12px;
+  }
+
+  .navigation ul li a {
+    font-size: 12px;
+  }
+
+  /* Recently played */
   .cover {
+    width: 45%;
     margin-right: 5px;
   }
 }
+
 @media all and (max-width: 768px) {
 
   /* navbar */
@@ -417,6 +556,11 @@ footer {
     width: calc(100% - 50px);
   }
 
+  /* nav top upgrade */
+  #upgrade {
+    width: calc(100% - 50px);
+  }
+
   /* navigation list */
   .navigation ul li {
     margin-right: 47px;
@@ -434,6 +578,45 @@ footer {
 
   .cover:hover .overlayer {
   	visibility: hidden;
+  }
+
+  /* footer */
+  /* block-left */
+  .heart {
+    margin-left: 25px;
+  }
+
+  .heart a i {
+    width: 100%;
+  }
+
+  /* central block */
+  .player {
+    width: 100%;
+  }
+  .player ul {
+    justify-content: space-between;
+  }
+
+  .player ul li {
+    margin-right: 0;
+  }
+
+  .player ul li a .fas {
+    font-size: 14px;
+  }
+
+  .player ul li a .far {
+    font-size: 25px;
+  }
+
+  .timing {
+    font-size: 13px;
+  }
+
+  /* block right */
+  .player-right .fas {
+    font-size: 20px;
   }
 }
 
