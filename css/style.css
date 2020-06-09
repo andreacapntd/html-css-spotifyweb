@@ -65,6 +65,11 @@ nav {
   color: #fff;
 }
 
+#main-nav .home a:hover {
+  border-left: 2px solid #00ff19;
+  color: #fff;
+}
+
 #main-nav ul li a img {
   height: 20px;
   margin-right: 5px;
@@ -196,6 +201,7 @@ nav {
 }
 
 .navigation ul li a:hover {
+  border-bottom: 2px solid #00ff19;
   color: #fff;
 }
 
@@ -470,7 +476,7 @@ footer {
 }
 
 .player-right .fas {
-  font-size: 25px;
+  font-size: 15px;
   margin: 0;
   color: #fff;
 }
