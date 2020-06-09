@@ -305,9 +305,54 @@ nav {
 /* footer */
 footer {
   height: 90px;
+  padding: 0 10px;
   background-color: #292828;
 }
 
+/* block left */
+.block-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+
+.sinister {
+  margin-right: 7px;
+}
+.sinister img {
+  height: 50px;
+}
+
+.title a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.title #subtitle {
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.title #subtitle:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.heart {
+  margin-left: 40px;
+}
+
+.heart a {
+  text-decoration: none;
+  color: #b3b3b3;
+  margin-right: 5px;
+}
+
+.heart a:hover {
+  color: #fff;
+}
 /* smartphone version */
 @media all and (max-width: 579px) {
   .cover {
