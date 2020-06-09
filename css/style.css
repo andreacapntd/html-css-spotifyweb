@@ -94,7 +94,7 @@ nav {
 }
 
 .install {
-  margin-top: 30px;
+  margin-top: 35px;
   border-bottom: 1px solid #b3b3b3;
   padding-bottom: 15px;
 }
@@ -120,6 +120,10 @@ nav {
  border-radius: 50%;
 }
 
+.xs_version {
+  display: none;
+}
+
 /* main body */
 .main-body {
   float: left;
@@ -132,6 +136,8 @@ nav {
 #upgrade {
   background-color: #292828;
   position: fixed;
+  top: 0;
+  right: 0;
   z-index: 999;
   width: calc(100% - 230px);
 }
@@ -443,12 +449,14 @@ footer {
   height: 100%;
   width: 30%;
 }
+
 .player-right {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .player-right ul {
@@ -456,9 +464,11 @@ footer {
   align-items: center;
   list-style-type: none;
 }
+
 .player-right ul li {
   margin-right: 10px;
 }
+
 .player-right .fas {
   font-size: 25px;
   margin: 0;
