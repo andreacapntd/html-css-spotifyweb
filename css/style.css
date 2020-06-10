@@ -42,8 +42,11 @@ nav {
 
 /* Main-Nav */
 #main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 70px);
   padding: 0 15px;
-  margin-top: 20px;
 }
 
 #main-nav .home  ul li {
@@ -79,6 +82,10 @@ nav {
   margin-top: 15px;
 }
 
+.scroll {
+  overflow: auto;
+}
+
 #main-nav .playlist h4 {
   text-transform: uppercase;
   color: #fff;
@@ -99,7 +106,6 @@ nav {
 }
 
 .install {
-  margin-top: 35px;
   border-bottom: 1px solid #b3b3b3;
   padding-bottom: 15px;
 }
@@ -257,7 +263,6 @@ nav {
 }
 
 .cover img {
-  height: 180px;
   width: 100%
 }
 .cover h5 {
@@ -410,7 +415,7 @@ footer {
 
 .bar {
   display: flex;
-  height: 10px;
+  height: 3px;
   width: 100%;
   margin: 0 10px;
   background-color: #b3b3b3;
@@ -439,12 +444,13 @@ footer {
 }
 
 .circle .fas {
-  font-size: 18px;
+  font-size: 10px;
   margin: 0;
   color: #fff;
 }
 
 .timing {
+  font-size: 12px;
   color: #fff;
 }
 
@@ -483,7 +489,7 @@ footer {
 
 .block-right .bar {
   display: flex;
-  height: 5px;
+  height: 3px;
   width: 30%;
   background-color: #b3b3b3;
   border: 1px solid #b3b3b3;
@@ -659,5 +665,28 @@ footer {
     width: 100%;
     margin-top: 20px;
   }
+}
 
+@media all and (max-height:700px) {
+  .scroll {
+    height: 250px;
+  }
+}
+
+@media all and (max-height:668px) {
+    .scroll {
+      height: 218px;
+    }
+}
+
+@media all and (max-height:642px) {
+    .scroll {
+      height: 192px;
+    }
+}
+
+@media all and (max-height:613px) {
+    .scroll {
+      height: 163px;
+    }
 }
