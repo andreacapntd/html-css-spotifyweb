@@ -53,6 +53,11 @@ nav {
   margin-bottom: 7px;
 }
 
+.here-home {
+  height: 20px;
+  border-left: 2px solid #00ff19;
+}
+
 #main-nav .xs_home {
   display: none;
 }
@@ -69,7 +74,6 @@ nav {
 }
 
 #main-nav .home a:hover {
-  border-left: 2px solid #00ff19;
   color: #fff;
 }
 
@@ -103,6 +107,10 @@ nav {
 
 .playlist ul li{
   margin-bottom: 20px;
+}
+
+.main-nav-sub {
+  padding-bottom: 5px;
 }
 
 .install {
@@ -207,10 +215,13 @@ nav {
 }
 
 .navigation ul li a:hover {
-  border-bottom: 2px solid #00ff19;
   color: #fff;
 }
 
+.here {
+  border-top: 2px solid #00ff19;
+  padding: 0 15%;
+}
 /*Recently played  */
 #recently {
   padding: 0 15px;
@@ -547,6 +558,10 @@ footer {
     margin-top: 0;
   }
 
+  #main-nav a {
+    justify-content: center;
+  }
+
   #main-nav .xs_home ul li {
     margin-bottom: 5px;
   }
@@ -555,19 +570,25 @@ footer {
     display: none;
   }
 
-  #main-nav .xs_home,#main-nav .xs_install, #main-nav .xs_profile {
+  #main-nav .xs_home {
     display: block;
   }
 
   #main-nav .xs_version {
+    display: block;
     margin-top: 440px;
   }
 
   #main-nav .xs_install {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  
+  #main-nav .xs_install img {
+    height: 30px;
   }
 
   #main-nav .xs_profile img {
+    height: 30px;
     background-color: #b3b3b3;
     border-radius: 50%;
   }
