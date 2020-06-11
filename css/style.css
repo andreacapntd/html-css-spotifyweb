@@ -124,6 +124,7 @@ nav {
 }
 
 .profile {
+  display: flex;
   margin-top: 15px;
 }
 
@@ -250,7 +251,6 @@ nav {
 	top: 0;
 	right: 0;
 	width: 100%;
-	height: 180px;
 	position: absolute;
 	background: rgba(0,0,0,0.6);
 	text-align: center;
@@ -582,7 +582,7 @@ footer {
   #main-nav .xs_install {
     margin-bottom: 10px;
   }
-  
+
   #main-nav .xs_install img {
     height: 30px;
   }
