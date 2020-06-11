@@ -244,24 +244,30 @@ nav {
 .cover {
   width: 15%;
   margin-right: 15px;
+}
+
+.hov {
   position: relative;
 }
 
-.cover .overlayer {
+.hov .overlayer {
 	top: 0;
 	right: 0;
+  height: 100%;
 	width: 100%;
 	position: absolute;
 	background: rgba(0,0,0,0.6);
-	text-align: center;
   cursor: pointer;
 	visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlayer .fa-play-circle {
 	color: #fff;
 	font-size: 70px;
-	margin-top: 55px;
 	transition: 100ms ease-in-out;
 }
 
@@ -682,9 +688,7 @@ footer {
   }
 
   .cover img {
-    height: 140px;
     width: 100%;
-    margin-top: 20px;
   }
 }
 
